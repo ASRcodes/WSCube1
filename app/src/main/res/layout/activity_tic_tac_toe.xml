@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".TicTacToe">
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="360dp"
+        android:columnCount="3"
+        android:rowCount="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btn1"
+            android:onClick="check" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_marginLeft="11sp"
+            android:onClick="check" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_marginLeft="11sp"
+            android:onClick="check" />
+
+        <Button
+            android:id="@+id/btn4"
+            android:onClick="check" />
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_marginLeft="11sp"
+            android:onClick="check" />
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_marginLeft="11sp"
+            android:onClick="check" />
+
+        <Button
+            android:id="@+id/btn7"
+            android:onClick="check" />
+
+        <Button
+            android:id="@+id/btn8"
+            android:layout_marginLeft="11sp"
+            android:onClick="check" />
+
+        <Button
+            android:id="@+id/btn9"
+            android:layout_marginLeft="11sp"
+            android:onClick="check" />
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="115dp"
+        android:layout_height="71dp"
+        android:text="Restart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.902"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.853"
+        app:srcCompat="@drawable/reset" />
+
+    <TextView
+        android:id="@+id/textReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginBottom="148dp"
+        android:text=""
+        android:textColor="#BF1E12"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/reset"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
