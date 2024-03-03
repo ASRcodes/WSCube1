@@ -1,2 +1,2 @@
-# WSCube1
+# Learning1
 All my learnings are available in this project..........
